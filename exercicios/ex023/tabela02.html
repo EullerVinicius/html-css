@@ -9,6 +9,7 @@
 <body>
     <!--ANATOMIA PARA TABELAS GRANDES
        TABLE
+       SCOPE
              tr, td, th
         THEAD
             Tr, td, th
@@ -18,11 +19,12 @@
             tr, td, th
                       -->
 <table>
+    <caption>População das unidades federativas</caption>
     <thead>
-        <th>Posição</th>
-        <th>Estado</th>
-        <th>População</th>
-        <th>% da pop.
+        <th scope="col" style="width: 30px;">Posição</th>
+        <th scope="col">Estado</th>
+        <th scope="col" style="width: 100px;">População</th>
+        <th scope="col" style="width: 50px;">% da pop.
             total
         </th>
     </thead>
@@ -191,7 +193,7 @@
         </tr>
     </tbody>
     <tfoot>
-        <th>Total de habitantes</th>
+        <th scope="row">Total de habitantes</th>
         <td class="num">00000000000</td>
     </tfoot>
 </table>

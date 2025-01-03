@@ -5,6 +5,12 @@ body{
 table{
     width: 500px;
     border-collapse: collapse;
+    position: relative;
+}
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color: darkslategray;
 }
 td, th{
     border: 1px solid black;
@@ -19,4 +25,16 @@ td.num{
 }
 table > td.posicao{
     width: 200px;
+}
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: lightgray;
+    padding: 10px;
+}
+tbody > tr:nth-child(odd){
+background-color: lightgray;
+}
+tbody >tr:nth-child(even){
+    background-color: limegreen;
 }
